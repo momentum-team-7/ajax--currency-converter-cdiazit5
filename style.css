@@ -3,3 +3,37 @@
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.toprow {
+  display: flex;
+  padding: 10px;
+}
+
+select.fromBase {
+  margin-left: 10px;
+}
+
+select.toBase {
+  margin-left: 10px;
+}
+
+.to {
+  margin-left: 10px;
+}
+
+input.numberInput {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.convert {
+  margin-top: 10px;
+}
+
+.inputField {
+  margin-top: 3px;
+}
