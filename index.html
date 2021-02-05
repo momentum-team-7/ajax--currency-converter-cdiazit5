@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currency Converter</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" async></script>
+  <script src="script.js"></script>
   <script src="main.js" defer></script>
 </head>
 <body>
@@ -13,8 +13,9 @@
 
   <div class="toprow">
     <h4>Convert from </h4>
-    <select class='fromBase'>
+    <select id='fromBase'>
       <option value="">Country</option>
+      <!-- <option value="">Country</option>
       <option value="usd">USD</option>
       <option value="jpy">JPY</option>
       <option value="bgn">BGN</option>
@@ -46,11 +47,12 @@
       <option value="php">PHP</option>
       <option value="sgd">SGD</option>
       <option value="thb">THB</option>
-      <option value="zar">ZAR</option>
+      <option value="zar">ZAR</option> -->
     </select>
     <h4 class="to">to</h4>
-    <select class='toBase'>
+    <select id='toBase'>
       <option value="">Country</option>
+      <!-- <option value="">Country</option>
       <option value="usd">USD</option>
       <option value="jpy">JPY</option>
       <option value="bgn">BGN</option>
@@ -82,21 +84,17 @@
       <option value="php">PHP</option>
       <option value="sgd">SGD</option>
       <option value="thb">THB</option>
-      <option value="zar">ZAR</option>
+      <option value="zar">ZAR</option> -->
     </select>
   </div>
 
   <div class="bottomrow">
-    <label>Input number</label>
-    <form class="inputField">
-      <input type='text' class="numberInput" >
-    </form>
-    <button class="convert">Convert</button>
+    <label>Amount</label>
+      <input id="currency-amount" type='number' class="numberInput" >
+    <button id="convert">Convert</button>
   </div>
 
-
-
-  <div class="converterResults"></div>
+  <div id="converterResults"></div>
 
 </body>
 </html>
